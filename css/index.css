@@ -169,11 +169,25 @@ p {
   font-size: 3.9rem;
   margin: 1.3rem;
 }
+@media (max-width: 500px) {
+  .navigation h1 {
+    margin-left: 3rem;
+  }
+}
 .navigation nav {
   display: flex;
   justify-content: space-between;
   width: 47%;
   margin: 1rem 0;
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    width: 85%;
+    justify-content: space-around;
+    margin-left: 1.5rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.3rem;
+  }
 }
 .navigation nav a {
   text-decoration: none;
@@ -195,6 +209,10 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 5px;
+  width: 100%;
 }
 .home .space-images {
   display: flex;
