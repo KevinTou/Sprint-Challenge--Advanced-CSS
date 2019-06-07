@@ -28,9 +28,13 @@
       height: 100%;
 
       @media @phone {
-        margin-left: auto;
-        margin-right: auto;
+        .center();
         width: 90%;
+      }
+    }
+    .blast {
+      @media @phone {
+        margin-bottom: 0;
       }
     }
     .sky,
@@ -108,9 +112,7 @@
       width: 46%;
       margin-left: 4%;
 
-      @media @phone {
-        width: 100%;
-      }
+      .phone-width();
 
       img {
         width: 100%;

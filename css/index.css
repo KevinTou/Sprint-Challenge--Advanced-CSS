@@ -227,6 +227,11 @@ footer {
   }
 }
 @media (max-width: 500px) {
+  .home .space-images .blast {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 500px) {
   .home .space-images .sky,
   .home .space-images .launch {
     display: none;
