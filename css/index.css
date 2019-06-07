@@ -160,30 +160,35 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.navigation {
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.sticky .navigation {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.navigation h1 {
+.sticky .navigation h1 {
   font-size: 3.9rem;
   margin: 1.3rem;
 }
-.navigation nav {
+.sticky .navigation nav {
   display: flex;
   justify-content: space-between;
   width: 47%;
   margin: 1rem 0;
 }
 @media (max-width: 500px) {
-  .navigation nav {
+  .sticky .navigation nav {
     width: 85%;
     justify-content: space-around;
     margin-top: 0.8rem;
     margin-bottom: 1.3rem;
   }
 }
-.navigation nav a {
+.sticky .navigation nav a {
   text-decoration: none;
   color: #454a59;
   font-size: 1.6rem;
