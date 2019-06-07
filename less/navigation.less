@@ -1,1 +1,38 @@
 // Navigation code here
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: rgba(246, 246, 246, 0.8);
+  border-bottom: 1px solid @nav-border;
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 3.9rem;
+      margin: 1.3rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      width: 47%;
+      margin: 1rem 0;
+
+      @media @phone {
+        width: 85%;
+        justify-content: space-around;
+        margin-top: 0.8rem;
+        margin-bottom: 1.3rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: @nav-font;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
